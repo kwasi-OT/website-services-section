@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Services Section</title>
+    <style>
+        /*universal settings*/
+        * {
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .services {
+            width: 80%;
+            height: 100vh;
+            margin: 0 auto;
+        }
+
+        .design, .hosting, .management {
+            width: 80%;
+            height: 50vh;
+            border: 1px solid black;
+        }
+
+        /* mobile settings*/
+        .services {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        /* desktop setting */
+        @media(min-width:900px) {
+            .services {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                gap: 1rem;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <section class="services">
+        <div class="design"></div>
+        <div class="hosting"></div>
+        <div class="management"></div>
+    </section>
+</body>
+</html>
