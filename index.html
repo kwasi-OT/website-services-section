@@ -16,6 +16,7 @@
         body {
             margin: 0;
             padding: 0;
+            background-color: hsl(206, 91%, 51%);
         }
 
         .services {
@@ -24,10 +25,16 @@
             margin: 0 auto;
         }
 
-        .design, .hosting, .management {
-            width: 80%;
-            height: 50vh;
-            border: 1px solid black;
+        .card {
+            width: 100%;
+            height: 60vh;
+            /*border: 0.5px solid #cddbdd;*/
+            background-color: #bbe0fc;
+            box-shadow: 0 15px 19px 0 rgba(0,0,0,0.19), 0 15px 52px 0 rgba(0,0,0,0.15);
+        }
+
+        .design:hover {
+            background-position: 50px;
         }
 
         /* mobile settings*/
@@ -37,6 +44,7 @@
             align-items: center;
             justify-content: center;
             gap: 1rem;
+            padding: 2rem 0;
         }
 
         /* desktop setting */
@@ -46,7 +54,7 @@
                 flex-direction: row;
                 align-items: center;
                 justify-content: center;
-                gap: 1rem;
+                /*gap: 1rem;*/
             }
         }
 
@@ -54,9 +62,24 @@
 </head>
 <body>
     <section class="services">
-        <div class="design"></div>
-        <div class="hosting"></div>
-        <div class="management"></div>
+        <a href="#" class="card">
+            <div class="design">
+                <div class="text"></div>
+                <div class="img"></div>
+            </div>
+        </a>
+        <a href="#" class="card">
+            <div class="hosting">
+                <div class="text"></div>
+                <div class="img"></div>
+            </div>
+        </a>
+        <a href="#" class="card">
+            <div management>
+                <div class="text"></div>
+                <div class="img"></div>
+            </div>
+        </a>
     </section>
 </body>
 </html>
